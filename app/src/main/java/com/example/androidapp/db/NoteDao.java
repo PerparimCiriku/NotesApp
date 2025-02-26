@@ -24,4 +24,6 @@ public interface NoteDao {
 
     @Query("SELECT * FROM Note WHERE userId = :userId ORDER BY createdAt DESC")
     List<Note> getNotesByUser(int userId);
+
+
 }

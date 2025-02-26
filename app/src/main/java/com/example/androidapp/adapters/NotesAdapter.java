@@ -64,17 +64,18 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NoteViewHold
         return notes.size();
     }
 
-    static class NoteViewHolder extends RecyclerView.ViewHolder {
-        TextView title, description, createdAt;
-        View deleteButton;
+    public static class NoteViewHolder extends RecyclerView.ViewHolder {
+        public TextView title, description, createdAt;  // Make these public if needed
+        public View deleteButton;  // Make deleteButton public
 
         public NoteViewHolder(@NonNull View itemView) {
             super(itemView);
             title = itemView.findViewById(R.id.tvTitle);
             description = itemView.findViewById(R.id.tvDescription);
             createdAt = itemView.findViewById(R.id.tvCreatedAt);
-            deleteButton = itemView.findViewById(R.id.btnDelete);
+            deleteButton = itemView.findViewById(R.id.btnDelete);  // Now accessible
         }
     }
+
 }
 

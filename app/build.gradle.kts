@@ -48,6 +48,12 @@ dependencies {
     implementation (libs.room.runtime)
     annotationProcessor (libs.room.compiler)
     testImplementation(libs.junit)
+    testImplementation(libs.mockito.core)
+    androidTestImplementation(libs.ext.junit)
+    androidTestImplementation(libs.espresso.core)
+    testImplementation("org.mockito:mockito-android:4.8.0")
+    androidTestImplementation("androidx.fragment:fragment-testing:1.5.5")
+    testImplementation ("org.mockito:mockito-android:4.8.0")
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 }
