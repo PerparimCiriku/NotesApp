@@ -36,18 +36,18 @@ public class NotesAdapterTest {
     @Test
     public void testOnNoteClickListener_Edit() {
         adapter.onBindViewHolder(holder, 0);
-        holder.itemView.performClick(); // Simulate a click on the item view
+        holder.itemView.performClick();
 
-        // Verify that the onEdit method is called
+
         verify(listener).onEdit(mockNote);
     }
 
     @Test
     public void testOnNoteClickListener_Delete() {
         adapter.onBindViewHolder(holder, 0);
-        holder.deleteButton.performClick(); // Simulate a click on the delete button
+        holder.deleteButton.performClick();
 
-        // Verify that the onDelete method is called
+
         verify(listener).onDelete(mockNote);
     }
 }
